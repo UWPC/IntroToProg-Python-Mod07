@@ -11,14 +11,14 @@ A Syntax Error happens when the Python cannot understand a line of code. The maj
 In below example, the while (True) syntax is missing the colon (':') at the end, so when the program was executed, a SyntaxError was raised (Figure 1). 
 
 ![Figure 1.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%201.%20SyntaxError%20example.png?raw=true  "SyntaxError example")
-Figure 1.  SyntaxError example
+#### Figure 1.  SyntaxError example
 
 A Logical Error or Exception happens when the syntax is correct but an error occurs when the code is executed. When this occurs, if the exception is not properly handled, Python will display a ‘Traceback’ message including details about the error such as where the exception happened, line of code, exception type and what caused it.
 In the below example, the second argument of the division operation is zero, so when the program was executed, a ZeroDivisionError exception type was raised. This is one of the existing Python built-in exceptions (Figure 2).
 
 ![Figure 2.](
 https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%202%20ZeroDivisionError%20example.png?raw=true "ZeroDivisionError example")
-Figure 2.  ZeroDivisionError example
+#### Figure 2.  ZeroDivisionError example
 
 ### Demo Exception Handling Using Try-Except Block
 
@@ -89,13 +89,13 @@ https://www.freecodecamp.org/news/exception-handling-python/
 After the code was complete, I successfully ran the program using PyCharm (Figure 3).
 
 ![Figure 3.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%203.%20Screenshot%20running%20in%20PyCharm.png?raw=true "Screenshot of the script running in PyCharm")
-Figure 3.  Screenshot of the script running in PyCharm
+#### Figure 3.  Screenshot of the script running in PyCharm
 
 ### Running Exception Handling Script Using the Command Window
 
 And I also successfully ran the program using the Command Window (Figure 4).
 
 ![Figure 4.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.%20Screenshot%20running%20Command%20Window.png?raw=true "Screenshot of the script running in PyCharm")
-Figure 4.  Screenshot of the script running in the Command Window
+#### Figure 4.  Screenshot of the script running in the Command Window
 
 ## Pickling 
