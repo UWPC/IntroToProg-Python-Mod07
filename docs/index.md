@@ -166,19 +166,18 @@ https://www.pythoncentral.io/how-to-pickle-unpickle-tutorial/
 
 ### Running Pickling Script Using PyCharm
 After the code was complete, I successfully ran the program using PyCharm (Figure 5).
-
- 
+![Figure 5.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%205.%20Screenshot%20running%20in%20PyCharm.png?raw=true "Screenshot of the script running in PyCharm")
 #### Figure 5.  Screenshot of the script running in PyCharm
 
 ### Running Pickling Using the Command Window
 And I also successfully ran the program using the Command Window (Figure 6).
 
- 
+![Figure 6.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%206.%20Screenshot%20running%20Command%20Window.png?raw=true "Screenshot of the script running in the Command Window") 
 #### Figure 6. Screenshot of the script running in the Command Window
 
 ### Verify that it Worked
 After I ran the program, I located the file and opened it to verify the file had data and it was correct (Figure 7).
-  
+![Figure 7.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%207.%20Verify%20it%20worked.png?raw=true "Verify it worked") 
 #### Figure 7. Verifying that the file has the correct data
 
 ## Summary
