@@ -10,6 +10,9 @@ A Python program will stop processing and will display an error message when it 
 A Syntax Error happens when the Python cannot understand a line of code. The majority of syntax errors are typos, incorrect indentation, or incorrect arguments.
 In below example, the while (True) syntax is missing the colon (':') at the end, so when the program was executed, a SyntaxError was raised (Figure 1). 
 
+![Figure 1.](https://github.com/UWPC/IntroToProg-Python-Mod07/blob/master/docs/Figure%201.%20SyntaxError%20example.png?raw=true  "SyntaxError example")
+Figure 1.  SyntaxError example
+
 A Logical Error or Exception happens when the syntax is correct but an error occurs when the code is executed. When this occurs, if the exception is not properly handled, Python will display a ‘Traceback’ message including details about the error such as where the exception happened, line of code, exception type and what caused it.
 In the below example, the second argument of the division operation is zero, so when the program was executed, a ZeroDivisionError exception type was raised. This is one of the existing Python built-in exceptions (Figure 2).
 
