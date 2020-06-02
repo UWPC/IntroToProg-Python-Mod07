@@ -99,3 +99,87 @@ And I also successfully ran the program using the Command Window (Figure 4).
 #### Figure 4.  Screenshot of the script running in the Command Window
 
 ## Pickling 
+ 
+Binary files are another option for storing data in a file besides plain text. One of the advantages it that binary files are obscure (unreadable), and they can be smaller when you have a large data set. Pickling is the process of converting complex data into byte stream (0s and 1s). This process is also referred to as serialization. When we convert the byte stream back into a Python object, it is called Unpickling. Pickling is often used to store complex or large data. Pickle can store and reproduce list, dictionaries easily. The dump() method is used to save the object to the file, and the load() method loads the object in the file and returns the object. 
+
+### Demo Pickling
+
+I have created the following script to demonstrate Python’s pickling functionality. In this demo, the program requests the user to enter an ID and a Name and stores the information in a list.  The list is saved to a binary file, and then the data is later read from the file into a list object.
+I started by adding the script header at the beginning of the script which includes information about the script such as title, brief description of the program, and change log (Listing 5).
+``` 
+# ------------------------------------------------- #
+# Title: Pickling and Unpickling
+# Description: A simple example of storing data in a binary file
+# ChangeLog: (Who, When, What)
+# PCoonrad,5.30.2020,Created Script
+# PCoonrad,5.31.2020,Updated Script: Processing layer
+# PCoonrad,6.01.2020,Updated Script: Presentation layer
+# ------------------------------------------------- #
+```
+#### Listing 5.  Assignment07_Pickling Script header
+
+The first thing I did in the program was import the pickle module. 
+I have organized the code using ‘Separations of Concerns’. And under the Data layer, I defined the variables used when running the Pickling script (Listing 6).
+```
+import pickle  # This imports code from another code file!
+
+# Data -------------------------------------------- #
+strFileName = 'AppData.dat'
+lstCustomer = []  # List from user input
+intId = ""  # Captures the user input value
+strName = ""  # Captures the user input value
+``` 
+#### Listing 6.  Importing the pickle module and Defining variables
+
+Under the Processing layer, saves the data to file and reads data from file using the data dump and load functions (Listing 7). 
+```
+# Processing -------------------------------------- #
+def save_data_to_file(file_name, list_of_data):
+    objFile = open(file_name, 'wb')
+    pickle.dump(list_of_data, objFile)  # store data using the pickle dump method
+    objFile.close()
+
+def read_data_from_file(file_name):
+    objFile = open(file_name, "rb")
+    objFileData = pickle.load(objFile)
+    objFile.close()
+    return objFile
+``` 
+#### Listing 7.  Saving data to and reading from binary file 
+
+Under the Presentation (Input/Output) layer, I used the input() function to request information from the user (Listing 8). 
+```
+# Presentation ------------------------------------ #
+intId = int(input("Enter an Id: "))  # request input from user
+strName = str(input("Enter a Name: "))  # request input from user
+list_of_data = [intId, strName]
+save_data_to_file(strFileName, list_of_data)
+print(read_data_from_file(file_name=strFileName))
+
+input("\nPress the 'Enter' key to exit.")
+``` 
+#### Listing 8.  Requesting user input and creating list
+
+While researching about Pickling, I came across two sites that were very helpful. The video gives a quick overview and demo about Pickling and demonstrate the basic function of Pickling. The second site provides more in depth knowledge in an accessible language and approach.  Both helped me better understand what Pickling is and how it works.
+https://www.youtube.com/watch?v=Pl4Hp8qwwes
+https://www.pythoncentral.io/how-to-pickle-unpickle-tutorial/
+
+### Running Pickling Script Using PyCharm
+After the code was complete, I successfully ran the program using PyCharm (Figure 5).
+
+ 
+#### Figure 5.  Screenshot of the script running in PyCharm
+
+### Running Pickling Using the Command Window
+And I also successfully ran the program using the Command Window (Figure 6).
+
+ 
+#### Figure 6. Screenshot of the script running in the Command Window
+
+### Verify that it Worked
+After I ran the program, I located the file and opened it to verify the file had data and it was correct (Figure 7).
+  
+#### Figure 7. Verifying that the file has the correct data
+
+## Summary
+In the Module 07, I have researched and learned about Exception Handling and Pickling in Python. With the help of instructional videos, textbook and consulting additional resources, I have created two scripts demonstrating how to use Exception Handling and Pickling. I successfully ran both scripts using PyCharm and the Command Window.
